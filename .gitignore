@@ -9,6 +9,15 @@ Makefile.in
 *.trs
 .dirstamp
 
+*.state
+*.ivf*
+*.y4m
+*.txt
+*.mgc
+.gg/
+*.swp
+
+
 /INSTALL
 /aclocal.m4
 /ar-lib
