@@ -131,6 +131,7 @@ vector<string> execute_thunk( const Thunk & original_thunk )
     roost::path outfile { exec_dir_path / output };
 
     if ( not roost::exists( outfile ) ) {
+      std::cout << "Yibang: I am here\n";
       throw ExecutionError {};
     }
 
