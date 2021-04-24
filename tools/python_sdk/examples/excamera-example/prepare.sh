@@ -8,7 +8,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 pwd
 
 # delete prev chunks
-./clear.sh
+#./clear.sh
 
 # build from avi source
 ffmpeg -i $AVI_PATH -pix_fmt yuv420p input.y4m

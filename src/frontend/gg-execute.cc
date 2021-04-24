@@ -24,11 +24,15 @@
 #include "util/temp_file.hh"
 #include "util/timelog.hh"
 #include "util/util.hh"
+#include <string>
+#include <filesystem>
+#include <unistd.h>
 
 using namespace std;
 using namespace gg;
 using namespace gg::thunk;
 using ReductionResult = gg::cache::ReductionResult;
+//using std::filesystem::current_path;
 
 const bool sandboxed = ( getenv( "GG_SANDBOXED" ) != NULL );
 const string temp_dir_template = "/tmp/thunk-execute";
