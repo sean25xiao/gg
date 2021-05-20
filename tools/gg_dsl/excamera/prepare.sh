@@ -5,7 +5,7 @@ USAGE="$0 <AVI-PATH>"
 AVI_PATH="$(readlink -f ${1?$USAGE})"
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 #cd $DIR/../
-cd $GG_DSL_EXCAMERA_PATH
+cd $GG_DSL_WORK_PATH
 pwd
 
 # build from avi source

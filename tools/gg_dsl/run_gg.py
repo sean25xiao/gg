@@ -22,7 +22,7 @@ def run_gg():
     elif parts[1] == 'video':
         #EXCAM_PATH = os.getenv('GG_DSL_EXCAMERA_PATH', default=0) # Get path to excam-static-bin
         if PATH == 0:
-            print("Please set up <path-to-excamera-output-file> to 'GG_DSL_EXCAMERA_PATH' ")
+            print("Please set up <path-to-excamera-output-file> to 'GG_DSL_WORK_PATH' ")
             sys.exit(1)
         print(PATH)
         execute_video_processing(parts[2], int(parts[3]), int(parts[4]), int(parts[5]), int(parts[6]), int(parts[7]), PATH)

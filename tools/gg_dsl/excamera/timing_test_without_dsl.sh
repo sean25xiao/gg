@@ -3,7 +3,7 @@
 start_time="$(date -u +%s)"
 
 # Clear previous work
-cd $GG_DSL_EXCAMERA_PATH
+cd $GG_DSL_WORK_PATH
 rm -rf *.state *.ivf *.y4m *.txt *.mgc .gg output.avi
 
 # Prepare the video
@@ -12,8 +12,8 @@ ffmpeg -i input.y4m -f segment -segment_time 1 -pix_fmt yuv420p 0000%4d.y4m
 
 # Create Thunk
 cd /home/me/5710_gg/gg/tools/gg_dsl/excamera
-python3 excam_ex.py 0 16 2 32 $GG_DSL_EXCAMERA_PATH
-cd $GG_DSL_EXCAMERA_PATH
+python3 excam_ex.py 0 16 2 32 $GG_DSL_WORK_PATH
+cd $GG_DSL_WORK_PATH
 
 # Run
 printf "4. Run video processing jobs\n"

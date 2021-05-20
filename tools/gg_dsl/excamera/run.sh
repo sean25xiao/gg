@@ -5,7 +5,7 @@ USAGE="$0 <JOBS-COUNT>"
 JOBS_COUNT=${1?$USAGE}
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 #cd $DIR/../
-cd $GG_DSL_EXCAMERA_PATH
+cd $GG_DSL_WORK_PATH
 
 #printf "1. Generate Makefile\n"
 #./gen_makefile.py 0 6 16 1 > Makefile
