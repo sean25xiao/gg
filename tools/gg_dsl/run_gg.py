@@ -4,10 +4,12 @@ import time
 sys.path.insert(0, './excamera')
 sys.path.insert(0, './general')
 sys.path.insert(0, './general/compiling')
+sys.path.insert(0, './imageConv')
 from read_args import read_args, get_module
 from gg_video import execute_video_processing
 from gg_general import execute_general_program
 from gg_compiling import compiling
+from gg_img import execute_image_convolution
 
 
 # run_gg video <video_name.avi> 0 4 2 32
@@ -41,6 +43,11 @@ def run_gg():
                 sys.exit(1)
             print(PATH)
             execute_general_program(parts[2], parts[3], PATH)
+    elif parts[1] == "imgconv":
+        if PATH == 0:
+            print("Please set up <the work directory> to 'GG_DSL_WORK_PATH")
+            sys.exit(1)
+        execute_image_convolution(parts[2], parts[3], PATH)
 
 
 
