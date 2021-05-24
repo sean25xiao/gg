@@ -3,8 +3,8 @@
 #include <time.h>
 #include <unistd.h>
 
-#define NUM_FILE 100
-#define IMAGE_DIM 300
+#define NUM_FILE 5
+#define IMAGE_DIM 3840
 
 int main(int argc, char **argv) {
 

@@ -18,7 +18,11 @@ cd $GG_DSL_WORK_PATH
 #gg-infer make -j$(nproc)
 
 printf "4. Run video processing jobs\n"
+start_time="$(date -u +%s)"
 gg force --jobs=$JOBS_COUNT --engine=lambda *.ivf
+end_time="$(date -u +%s)"
+elapsed="$(($end_time-$start_time))"
+echo "$elapsed"
 
 printf "5. Build output.avi\n"
 ls *-vpxenc.ivf | while read each; do echo "file '$each'" >> mylist.txt; done

@@ -12,6 +12,8 @@ make clean
 gg init
 gg infer make -j$JOBS_PROC     # creates the thunks
 #gg force --jobs $2 --engine lambda src/frontend/mosh-server
+
+#start_time="$(date -u +%s)"
 gg force --jobs $JOBS_COUNT --engine lambda /home/me/mosh/src/frontend/mosh-server
 
 end_time="$(date -u +%s)"

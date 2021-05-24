@@ -9,7 +9,7 @@ def execute_video_processing(video_name, start, end, batch_size, cq_level, num_j
 
     # Prepare the video into .y4m file
     prepare_video = './excamera/prepare.sh {}'
-    prepare_video_cmd = prepare_video.format(video_name)
+    prepare_video_cmd = prepare_video.format(output_path+video_name)
     os.system(prepare_video_cmd)
 
     # Create Thunk

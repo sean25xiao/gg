@@ -5,7 +5,7 @@
 #include <math.h>
 #include <unistd.h>
 
-#define IMAGE_DIM 300
+#define IMAGE_DIM 3840
 #define KERNEL_SZ 5 
 
 void print_matrix(float *m, int dim) {
